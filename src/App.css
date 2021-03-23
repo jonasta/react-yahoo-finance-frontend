@@ -1,0 +1,19 @@
+.chartContainer{
+    width:100% ;
+    min-Width:15rem; 
+    height:100%;
+    min-height:10rem;
+    margin-bottom: 1rem; 
+}
+.recharts-cartesian-axis-tick {
+    font-size: .8rem;
+}
+.cadsList-col, header .navbar{
+    margin-bottom: 2rem;
+}
+.card-body{
+    padding: 1rem 1rem 0 0!important
+}
+footer {
+    margin-top: 2rem;
+}

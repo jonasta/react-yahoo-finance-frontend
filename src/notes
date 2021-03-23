@@ -1,0 +1,77 @@
+basics
+    npx create-react-app react-essentials
+
+    index.js
+        ReactDOM.render...
+
+        React.createElement("li")
+
+        JSx - javascript as html
+            babel
+
+components
+    functions that return UIs
+    function Header(propsX){}
+
+    react.fragment
+        <></>
+
+distructuring
+    const [,,important] = ["1", "2", "importantThing"]
+
+Hooks 
+    UseState
+        const [emotion, setEmotion] = useState("happy")
+        buttom onclick ={()=>setEmotion("frustrated")}
+
+    UseEffect
+        useEffect(()=>{
+            //console.log(any variable)
+        })
+
+    UseReducer
+
+        function that takes current state
+        return new state
+
+        const [emotion, setEmotion] = useReducer((value)=>{emotion = value}, "happy")
+
+    displaying data from API
+        const data - useState
+        useEffect(()=>{ //fetch data from api }, [])
+        if (data){}
+
+Tests
+    use jest sintax
+
+    test("renders an h1", () => {
+    const { getByText } = render(<App />);
+    const h1 = getByText(/Hello React Testing Library/);
+    expect(h1).toHaveTextContent(
+        "Hello React Testing Library"
+    );
+    });
+
+Routing
+    react router
+    function App() {
+    return (
+        <div>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />}>
+            <Route path="services" element={<Services />} />
+            <Route path="history" element={<History />} />
+            <Route path="location" element={<Location />} />
+            </Route>
+            <Route path="/events" element={<Events />} />
+            <Route path="/contact" element={<Contact />} />
+        </Routes>
+        </div>
+    );
+    }
+
+Next Steps
+    react doc
+    react native
+    GraphQl
