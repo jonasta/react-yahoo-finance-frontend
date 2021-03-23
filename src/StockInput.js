@@ -10,7 +10,7 @@ function StockInput(props) {
   const searchValue = useRef(null);
 
   const setSearchQuery = debounce(e => {
-    if (e.target.value.length == 0) {
+    if (e.target.value.length === 0) {
       setSuggestions([])
       return
     }
